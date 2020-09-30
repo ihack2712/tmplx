@@ -36,4 +36,28 @@ export default class Core<Engine extends IEngine> extends TemplateRoot<Engine>
 	{
 		super(engine);
 	}
+	
+	/**
+	 * Get the document core version.
+	 */
+	public getDocumentCoreVersion (): string
+	{
+		return (this as any).constructor.documentCoreVersion || Core.documentCoreVersion;
+	}
+	
+	/**
+	 * Get the document version.
+	 */
+	public getDocumentVersion (): string
+	{
+		return (this as any).constructor.documentVersion || Core.documentVersion;
+	}
+	
+	/**
+	 * Get the engine version support.
+	 */
+	public getEngineVersionSupport (): string
+	{
+		return (this as any).constructor.engineVersionSupport || Core.engineVersionSupport;
+	}
 }
