@@ -42,7 +42,7 @@ export class Core<Engine extends IEngine> extends TemplateRoot<Engine>
 	 */
 	public getDocumentCoreVersion (): string
 	{
-		return (this as any).constructor.documentCoreVersion || Core.documentCoreVersion;
+		return Core.documentCoreVersion;
 	}
 	
 	/**
