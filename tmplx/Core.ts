@@ -5,7 +5,7 @@ import { TemplateRoot } from "./remote.ts";
 /**
  * The TemplateX Document Core.
  */
-export default class Core<Engine extends IEngine> extends TemplateRoot<Engine>
+export class Core<Engine extends IEngine> extends TemplateRoot<Engine>
 {
 	
 	/** The TemplateX Document Core version. */
