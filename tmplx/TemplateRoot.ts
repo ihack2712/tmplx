@@ -1,5 +1,5 @@
 // Imports
-import { IEngine } from "./remote.ts";
+import type { IEngine } from "./remote.ts";
 
 /**
  * The TemplateX Document Root object.
